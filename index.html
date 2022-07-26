@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Penguin Fashion</title>
+  <!-- fontawesome link  -->
+  <script src="https://kit.fontawesome.com/1edf373191.js" crossorigin="anonymous"></script>
   <!-- tailwind css link  -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -24,22 +26,23 @@
 
 <body>
   <header class="bg-penguin mx-auto pt-10 pb-20">
-    <nav class="container mx-auto mb-10 px-20">
+    <nav class="container mx-auto mb-0 px-5 md:mb-0 md:px-0 lg:mb-10 lg:px-0">
       <div class="flex justify-between items-center">
         <div>
           <img class="w-80" src="images/logo.png" alt="">
         </div>
         <div>
-          <a class="text-xl font-medium mx-3" href="#">Home</a>
-          <a class="text-xl font-medium mx-3" href="#">Products</a>
-          <a class="text-xl font-medium mx-3" href="#">About us</a>
-          <a class="text-xl font-medium mx-3" href="#">Contact us</a>
+          <a class="text-xl font-medium mx-3 hidden md:inline lg:inline" href="#">Home</a>
+          <a class="text-xl font-medium mx-3 hidden md:inline lg:inline" href="#">Products</a>
+          <a class="text-xl font-medium mx-3 hidden md:inline lg:inline" href="#">About us</a>
+          <a class="text-xl font-medium mx-3 hidden md:inline lg:inline" href="#">Contact us</a>
+          <a href="#" class=" md:hidden lg:hidden text-2xl"><i class="fa-solid fa-bars"></i></a>
         </div>
       </div>
     </nav>
     <!-- banner section  -->
-    <section class="flex items-center justify-around px-10">
-      <div class="w-100">
+    <section class="flex items-center justify-around px-10 flex-col md:flex-row lg:flex-row">
+      <div class="w-100 text-center md:text-left lg:text-left">
         <h1 class="uppercase text-6xl mb-5 leading-tight font-bold">
           <span class="text-[#FABE4C] ">Be the Penguins</span> <br>
           <span class="text-[#363958] ">of Winter</span>
