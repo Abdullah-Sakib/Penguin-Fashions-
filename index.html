@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penguin Fashion</title>
+  <!-- tailwind css link  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            penguin: '#FFFBF0',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="bg-penguin p-10">
+    <nav class="container mx-auto mb-10 px-20">
+      <div class="flex justify-between items-center">
+        <div>
+          <img class="w-80" src="images/logo.png" alt="">
+        </div>
+        <div>
+          <a class="text-xl font-medium mx-3" href="#">Home</a>
+          <a class="text-xl font-medium mx-3" href="#">Products</a>
+          <a class="text-xl font-medium mx-3" href="#">About us</a>
+          <a class="text-xl font-medium mx-3" href="#">Contact us</a>
+        </div>
+      </div>
+    </nav>
+    <!-- banner section  -->
+    <section class="flex items-center justify-around px-20">
+      <div class="w-100">
+        <h1 class="uppercase text-6xl mb-5"> 
+          <span class="text-[#FABE4C] font-semibold">Be the Penguins</span> <br>
+          <span class="text-[#363958] font-semibold">of Winter</span>
+        </h1>
+        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Corporis quaerat quos vitae facere nesciunt ?</p>
+        <button class="bg-[#A4BC46] px-5 py-2 text-white rounded-lg font-semibold"><img class="w-9 inline-block" src="icons/shopping-cart 1.png" alt=""> BUY NOW</button>
+      </div>
+      <div class="w-100">
+        <img src="images/model.png" alt="">
+      </div>
+    </section>
+  </header>
+</body>
+</html>
